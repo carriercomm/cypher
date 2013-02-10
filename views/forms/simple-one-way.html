@@ -1,0 +1,18 @@
+<h1>{page.title}</h1>
+
+<h2>Synopsys</h2>
+{page.content}
+
+<h2>Strengths</h2>
+{page.strength}
+
+<h2>Weaknesses</h3>
+{page.weak}
+
+<form method="post" action="{page.action}" class="api-form" data-action="{page.api}">
+    <div><textarea name="plaintext" class="span12" rows="10" maxlength="8192">{page.placeholder}</textarea></div>
+    <div><button class="btn btn-primary">Go</button></div>
+</form>
+
+<h2>Results</h2>
+<pre id="encryption-result"></pre>
