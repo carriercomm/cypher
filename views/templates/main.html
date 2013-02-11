@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-	<title>Cypher: {title}</title>
+	<title>{title} : Online Cryptographer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link href="/styles/bootstrap.css" rel="stylesheet">
@@ -37,23 +37,41 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="brand" href="#">Online Cryptographer</a>
+          <a class="brand" href="/">Online Cryptographer</a>
           <div class="nav-collapse collapse">
             <ul class="nav">
-              <li class="active"><a href="#">Home</a></li>
               <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Traditional <b class="caret"></b></a>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Classical <b class="caret"></b></a>
                 <ul class="dropdown-menu">
-                  <li><a href="/rotate/rot13">Rot13</a></li>
-                  <li><a href="#">Transpositional</a></li>
+					<li class="nav-header">Substitution</li>
+                    <li><a href="/rotate/rot13">Rot13 (Caesar)</a></li>
+                    <li><a href="/rotate/rot47">Rot47</a></li>
+                    <li><a href="/rotate/rotn">RotN</a></li>
+                    <li><a href="/rotate/rotn">Masonic (Pigpen)</a></li>
+					<li class="divider"></li>
+					<li class="nav-header">Transpositional</li>
+                  <li><a href="#">Rail Fence cipher</a></li>
+                  <li><a href="#">Route cipher</a></li>
+                  <li><a href="#">Columnar Transposition</a></li>
+                  <li><a href="#">Double Transposition</a></li>
+                  <li><a href="#">Myszkowski Transposition</a></li>
+                  <li><a href="#">Disrupted Transposition</a></li>
+                  <li><a href="#">Grilles</a></li>
                 </ul>
               </li>
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Encryption <b class="caret"></b></a>
                 <ul class="dropdown-menu">
+					<li class="nav-header">Symmetric Key</li>
                   <li><a href="#">AES</a></li>
-                  <li><a href="#">DES</a></li>
                   <li><a href="#">Blowfish</a></li>
+                  <li><a href="#">DES</a></li>
+                  <li><a href="#">Triple DES</a></li>
+                  <li><a href="#">Serpent</a></li>
+                  <li><a href="#">Twofish</a></li>
+					<li class="divider"></li>
+					<li class="nav-header">Public Key</li>
+                  <li><a href="#">Might not have any...</a></li>
                 </ul>
               </li>
               <li class="dropdown">
@@ -61,14 +79,26 @@
                 <ul class="dropdown-menu">
                   <li><a href="#">MD5</a></li>
                   <li><a href="#">SHA1</a></li>
+                  <li><a href="#">SHA2</a></li>
+                  <li><a href="#">SHA3 (Keccak)</a></li>
                   <li><a href="#">CRC32</a></li>
+                  <li><a href="#">TIGER</a></li>
+                  <li><a href="#">GOST</a></li>
                 </ul>
               </li>
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Encoding <b class="caret"></b></a>
                 <ul class="dropdown-menu">
                   <li><a href="#">URL Encoding</a></li>
+                  <li><a href="#">HTML Encode</a></li>
                   <li><a href="#">Base64</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Converting <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+				  <li><a href="#">ASCII &raquo; Hex</a></li>
+				  <li><a href="#">Binary, Octal, Decimal, Hex</a></li>
                 </ul>
               </li>
             </ul>

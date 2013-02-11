@@ -14,7 +14,7 @@ module.exports = function(cargs) {
 				content: '<p>This is an implementation of the Rot13 function. Since the english alphabet contains 26 characters, by simply offsetting them by 13 characters, the resulting text is mangled and unreadable. Since this offset is exactly half of the character set, the encryption and decryption method is exactly the same.</p>',
 				strength: '<p>It is fast to calculate, easy to do on paper, and not too difficult to do in your head.</p>',
 				weak: '<p>It only works on letters, you can still see word structures, numbers, special characters, and spaces.</p>',
-				placeholder: "Twas brillig, and the slithy toves; Did gyre and gimble in the wabe; All mimsy were the borogoves, And the mome raths outgrabe. 12345",
+				placeholder: "Twas brillig, and the slithy toves\nDid gyre and gimble in the wabe;\nAll mimsy were the borogoves,\nAnd the mome raths outgrabe.\n12345",
 			}
 		});
 	});
