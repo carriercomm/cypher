@@ -3,6 +3,7 @@ module.exports = function(cargs) {
 	res.render('templates/main.html', {
 	  partials: {
 		body: 'index.html',
+		masthead: 'masthead.html',
 	  },
 	  title: 'Online Encryption, Encoding, Hashing',
 	});
