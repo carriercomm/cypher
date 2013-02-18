@@ -1,0 +1,28 @@
+<h1>Rotate Text 13 Characters</h1>
+<div class="row-fluid">
+	<div class="span6">
+		<h2>Synopsys</h2>
+		<p>This is an implementation of the Rot13 function. Since the english alphabet contains 26 characters, by simply offsetting them by 13 characters, the resulting text is mangled and unreadable. Since this offset is exactly half of the character set, the encryption and decryption method is exactly the same.</p>
+
+		<h2>Strengths</h2>
+		<p>It is fast to calculate, easy to do on paper, and not too difficult to do in your head.</p>
+
+		<h2>Weaknesses</h3>
+		<p>It only works on letters, you can still see word structures, numbers, special characters, and spaces.</p>
+
+	</div>
+	<div class="span6">
+		<h2>Input</h2>
+		<form method="post" action="/rotate/rot13" class="api-form" data-action="/api/rotate/rot13">
+			<div><textarea name="plaintext" class="span12" rows="10" maxlength="8192">Twas brillig, and the slithy toves
+Did gyre and gimble in the wabe;
+All mimsy were the borogoves,
+And the mome raths outgrabe.
+12345</textarea></div>
+			<div><button class="btn btn-primary">Go</button></div>
+		</form>
+
+		<h2>Output</h2>
+		<pre id="encryption-result"></pre>
+	</div>
+</div>
