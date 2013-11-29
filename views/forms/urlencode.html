@@ -1,0 +1,42 @@
+<h1>URL Encode and Decode</h1>
+<div class="row-fluid">
+	<div class="span6">
+		<h2>Synopsys</h2>
+		<p>URLs have special characters which have special meanings. For example, a ? means we're about to have some query parameters, an = is a parameter assignment, and a &amp; separates parameters, among others. Whenever we stick interesting data in a URL, we must first encode it.</p>
+
+		<h2>Strengths</h2>
+		<p>This is a web standard for encoding data before adding it as a URL parameter.</p>
+
+		<h2>Weaknesses</h2>
+		<p>Encoded characters usually change from being one byte to three.</p>
+
+		<h2>Further Reading</h2>
+		<a href="https://en.wikipedia.org/wiki/Url_encode" target="_blank">Percent Encoding on Wikipedia</a>
+
+	</div>
+	<div class="span6">
+		<div class="conversion-grouping">
+			<h2>Normal Text (Input)</h2>
+			<form method="post" action="/encode/url/encode" class="api-form" data-action="/api/encode/url/encode">
+				<div><textarea name="input" class="span12" rows="10" maxlength="8192">fun&search=parameters;!@#$%^&*(</textarea></div>
+				<div><button class="btn btn-primary">Encode Above Text</button></div>
+			</form>
+
+			<h2>Encoded Text (Output)</h2>
+			<pre class="encryption-result"></pre>
+		</div>
+
+		<hr />
+
+		<div class="conversion-grouping">
+			<h2>Encoded Text (Input)</h2>
+			<form method="post" action="/encode/url/decode" class="api-form" data-action="/api/encode/url/decode">
+				<div><textarea name="input" class="span12" rows="10" maxlength="8192">fun%26search%3Dparameters%3B!%40%23%24%25%5E%26*(</textarea></div>
+				<div><button class="btn btn-primary">Decode Above Text</button></div>
+			</form>
+
+			<h2>Normal Text (Output)</h2>
+			<pre class="encryption-result"></pre>
+		</div>
+	</div>
+</div>

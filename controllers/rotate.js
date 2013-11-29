@@ -11,14 +11,14 @@ module.exports = function(cargs) {
 	});
 
 	cargs.web.post('/rotate/rot13', function(req, res) {
-		res.send(rot13.encode(req.body.plaintext));
+		res.send(rot13.encode(req.body.input));
 	});
 
 	cargs.web.post('/api/rotate/rot13', function(req, res) {
 		res.send({
 			cypher: "rot13",
-			encoded: rot13.encode(req.body.plaintext),
-			raw: req.body.plaintext
+			output: rot13.encode(req.body.input),
+			raw: req.body.input
 		});
 	});
 };

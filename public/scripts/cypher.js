@@ -1,23 +1,29 @@
 $(function() {
-    $encryptionResult = $('#encryption-result');
-
     $('form.api-form').each(function() {
         var $form = $(this);
-        var $plaintext = $('*[name=plaintext]');
+		var $group = $form.parents('.conversion-grouping');
+		console.log($group);
+        var $input = $('*[name=input]', $group);
         var api_url = $form.attr('data-action');
+		var $result = $('.encryption-result', $group);
+
         $form.submit(function(e) {
             e.preventDefault();
-            $encryptionResult.hide();
+			$result.hide();
             $.ajax({
+
                 type: 'POST',
                 contentType: "application/json; charset=utf-8",
                 url: api_url,
+
                 data: JSON.stringify({
-                    plaintext: $plaintext.val()
+                    input: $input.val()
                 }),
+
                 success: function(data) {
-                    $encryptionResult.text(data.encoded).slideDown();
+                    $result.text(data.output).slideDown();
                 },
+
                 dataType: 'json'
             });
         });
