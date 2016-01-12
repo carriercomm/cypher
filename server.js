@@ -10,7 +10,11 @@ var fs =        	require('fs');
 web.set('views', 'views');
 web.engine('html', whiskers.__express);
 web.use('/', express.static('./public'));
-server.listen(7000);
+
+var port = parseInt(process.argv[2], 10) || 80;
+var host = process.argv[3];
+
+server.listen(port, host);
 web.use(express.bodyParser());
 
 fs.readdir('./controllers', function(error, files) {
